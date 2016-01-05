@@ -12,7 +12,7 @@ min_budget = 1000
 base_url = 'https://www.upwork.com'
 
 # The page to scrape
-page = requests.get('https://www.upwork.com/o/jobs/browse/c/web-mobile-software-dev/sc/web-development/t/1/?sort=create_time%2Bdesc')
+page = requests.get('https://www.upwork.com/o/jobs/browse/c/web-mobile-software-dev/?sort=create_time%2Bdesc')
 
 tree = html.fromstring(page.content)
 
